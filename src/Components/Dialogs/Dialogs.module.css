@@ -1,0 +1,10 @@
+.DialogsWrapper {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+
+}
+
+.DialogList {
+    max-width: 150px;
+}

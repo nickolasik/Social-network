@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+*
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    max-width: 1200px;
+    min-height: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "navbar content"
+    "footer footer";
+    grid-template-rows: 100px 1fr 60px;
+    grid-template-columns: 2fr 10fr;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.content-wrapper {
+    background-color: gold;
+    min-height: 100%;
+
+    grid-area: content;
+}
